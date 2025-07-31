@@ -15,3 +15,7 @@ jobs:
 
       - name: Greet the world
         run: echo "Hello, World!"
+
+      - name: Build Docker image
+        run: |
+          docker build -t hello-world-image .
